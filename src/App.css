@@ -1,0 +1,104 @@
+        /* src/App.css */
+
+       /* src/components/Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .logo h1 {
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-bar input {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 5px;
+  }
+  
+  .filter-icon {
+    cursor: pointer;
+  }
+  
+  .categories-dropdown {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #fff;
+    color: #333;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 1000;
+  }
+  
+  .categories-dropdown ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+  }
+  
+  .categories-dropdown ul li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .categories-dropdown ul li:hover {
+    background-color: #b9b7b7;
+  }
+  
+        /* prodect list css*/
+        /* src/components/ProductList.css */
+    .product-list-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 16px;
+        padding: 16px;
+        justify-content: center; /* Centers the grid items */
+    }
+    
+    .product-card {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 12px;
+        text-align: center; /* Centers the text within the card */
+        transition: transform 0.3s ease;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+    }
+    
+    .product-card img {
+        width: 80px; /* Smaller image size */
+        height: 80px; /* Smaller image size */
+        object-fit: cover;
+        margin-bottom: 8px;
+    }
+    
+    .product-card h3 {
+        font-size: 1rem;
+        margin: 8px 0;
+    }
+    
+    .product-card p {
+        margin: 4px 0;
+        font-size: 0.9rem;
+        color: #555;
+    }
+    
+    .product-card:hover {
+        transform: scale(1.05); /* 3D hover effect */
+    }
+    .product-card-link {
+      list-style: none;
+    }

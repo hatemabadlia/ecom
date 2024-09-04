@@ -1,0 +1,148 @@
+.product-details-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.product-details {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 1.5rem;
+  margin: 2rem;
+  align-items: flex-start;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.product-image img {
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.product-info {
+  max-width: 450px;
+  text-align: center;
+}
+
+.product-info h2 {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.product-description {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.product-price {
+  font-size: 1.4rem;
+  color: #d9534f;
+  margin-bottom: 1.5rem;
+}
+
+.product-options {
+  margin-bottom: 2rem;
+}
+
+.size-selector,
+.color-selector {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.size-options,
+.color-options {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.size-option {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.size-option.selected {
+  background-color: #5cb85c;
+  color: white;
+}
+
+.color-option {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.color-option:hover {
+  transform: scale(1.1);
+}
+
+.color-option.selected {
+  border-color: #333;
+  transform: scale(1.1);
+}
+
+.quantity-selector {
+  margin-bottom: 1rem;
+}
+
+.add-to-cart-button,
+.buy-now-button {
+  background-color: #5cb85c;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin: 0.5rem;
+  display: inline-block;
+}
+
+.add-to-cart-button:hover,
+.buy-now-button:hover {
+  background-color: #4cae4c;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .product-details {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .product-image img {
+    width: 80%;
+    margin-bottom: 1.5rem;
+  }
+
+  .product-info {
+    max-width: 100%;
+  }
+}
+.phone-selector,
+.wilaya-selector {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.phone-selector input,
+.wilaya-selector select {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  width: 100%;
+  max-width: 300px;
+}
